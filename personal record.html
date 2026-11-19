@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
+            background-color: #cbf9ff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,10 +22,20 @@
             max-width: 400px;
             width: 100%;
         }
+        .profile-pic {
+            display: block;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            border: 3px solid #007bff;
+        }
         h1 {
             color: #007bff;
             font-size: 1.5em;
             text-align: center;
+            margin-top: 0;
             margin-bottom: 20px;
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
@@ -48,12 +58,16 @@
 <body>
 
     <div class="card">
+        <!-- นำไฟล์รูปภาพมาวางไว้โฟลเดอร์เดียวกับไฟล์ HTML แล้วเปลี่ยนชื่อไฟล์ใน src -->
+        <img src="รูป.jpg" alt="รูปโปรไฟล์" class="profile-pic">
+        
         <h1>ประวัติส่วนตัว</h1>
         <ul>
-            <li><strong>ชื่อ - นามสกุล:</strong> นาย นวพล รื่นเจริญ</li>
+            <li><strong>ชื่อ - นามสกุล:</strong> นายนวพล รื่นเจริญ</li>
             <li><strong>ชื่อเล่น:</strong> ไฟว์</li>
             <li><strong>อายุ:</strong> 20 ปี</li>
-            <li><strong>โรงเรียน:</strong> โรงเรียนวิทยาลัยเทคนิคสมุทรปราการ</li>
+            <li><strong>แผนก:</strong> เทคโนโลยีสารสนเทศ</li>
+            <li><strong>โรงเรียน:</strong> วิทยาลัยเทคนิคตสมุทรปราการ</li>
         </ul>
     </div>
 
